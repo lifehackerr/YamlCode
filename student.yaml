@@ -1,0 +1,7 @@
+School:
+  - name: gdps
+    principle: payal singh
+    students:
+      - name: Omkesh
+        rno: '34'
+        marks: '98'

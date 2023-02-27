@@ -1,0 +1,45 @@
+# string variable
+name : omkesh varshney
+fruit : "banana"
+job : 'swe'
+
+bio : |
+hey my name is omkesh
+and i work in tcs as a devs.
+
+# single line rep
+
+hobby : >
+i like
+to 
+play cricket
+
+# same as
+hobby : i like to play cricket.
+
+number : 1221
+float : 12.32
+booleanValue : No #n,N,false,False,FALSE
+
+# specify the type
+
+zero : !!int 0
+positibeNum : !!int 45
+negativenum : !!int -12
+binaryNum : !!int 0b1001
+commaValue : !!int +540_000 #540,000
+exponentialNum : 6.025E71
+
+marks : !!float 56.21
+not a num : .nan
+
+booleanvalue : !!bool Yes
+
+message : !!str my name is ommkesh
+
+# null
+surname : !!null #null NUll null ~
+
+
+date : !!timestamp 2002-09-22
+india time : 2001-09-21T02:23:32.03 +5:30

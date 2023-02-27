@@ -1,0 +1,23 @@
+"apple" : "I am a red fruit"
+1 : "I am no 1"
+---
+# Lists
+ - apple
+ - banana
+ - mango
+---
+# Block size data
+
+cities:
+  - Delhi
+  - Bombay
+  - chennai
+
+---
+cities: [mumbai,delhi]
+
+---
+{mango : "yello fruit" , age : 20}
+
+
+...

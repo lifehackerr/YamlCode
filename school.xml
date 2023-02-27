@@ -1,0 +1,23 @@
+<!-- <? xml version = "1.0" encoding = "UTF-8"?>
+<school name = "GDPS" principle = "payal singh">
+    <students>
+        <student>
+            <rno>412</rno>
+            <name>"Omkesh Varshney"</name>
+            <marks>89</marks>
+        </student>
+    </students>
+</school> -->
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<School>
+		<name>gdps</name>
+		<principle>payal singh</principle>
+		<students>
+			<name>Omkesh</name>
+			<rno>34</rno>
+			<marks>98</marks>
+		</students>
+	</School>
+</root>

@@ -1,0 +1,85 @@
+# lists 
+
+students : !!seq
+  -name
+  -class
+  -roll
+
+students : [name,class,roll]
+
+# Both are Same
+
+# Some of the keys of the seq is emty called as parse seq
+
+students : !!seq
+  -name
+  -class
+  -roll
+  -
+  -null
+
+# Nested list
+-
+  -name
+  -class
+  -roll
+-
+  -primary
+  -sec
+
+
+# Key value pairs are called maps
+# nested mapping
+
+name : omkesh varshney
+profile:
+  job : "swe"
+  time : 9-5
+  age : 23
+
+# keys may have duplicate values
+
+pair example : !!pairs
+  - job : "sWe"
+  - job : "learning"
+
+pair example : !!pairs [job : "sWe" ,job : "learning"]
+
+# this will be an array of hashtabels
+
+ # Set will allow you to have unique values
+
+names : !!Set
+ ? kunal
+ ? omkesh
+ ? rahul
+
+# dictionary !!omap == sequence to be as a value
+Group : !!omap
+  - omkesh :
+      name : omkesh varshney
+      age : 22
+  - harish :
+      nmae : harshit upadhyay
+      age : 21
+
+
+# Reusing same properties using anchors
+
+linkings : &likes
+  favfruit : Mango
+  dislikes : banana
+
+person1:
+  name : omkesh Varshney
+  << *likes
+
+# we can overwrite the properties also
+
+person2:
+  name : Satyam kumar
+  << *likes
+  dislikes : kiwi
+
+
+
